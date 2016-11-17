@@ -1,1 +1,2 @@
+(Ruby TDD)
 This will create a simple form in "localhost" with two fields: ninja_name and ninja_description.  When the form is submitted, it should be submitted to "/create".  If the form has invalid data (empty ninja_name or ninja_description) it should redirect to "/" with the error messages.  If the form has valid data (nonempty name/description), it should redirect to "/success", render the show view file and display a message that says "Form submitted successfully!".
