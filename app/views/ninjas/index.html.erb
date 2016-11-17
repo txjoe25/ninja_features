@@ -1,0 +1,11 @@
+<p><%= flash[:fail] %></p>
+<form action='/new' method='post'>
+	<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+	<label>Ninja Name:</label>
+		<input type="text" name="name">
+	<p><%= flash[:name] %></p>
+	<label>Ninja Description:</label>
+		<textarea rows="5" cols="50" name="description"></textarea>
+	<p><%= flash[:description] %></p>
+	<input type="submit" value="Submit">
+</form>
